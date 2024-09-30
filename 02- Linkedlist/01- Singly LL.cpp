@@ -112,7 +112,34 @@ Node* deletionLL(int position, Node* head) {
     }
 }
 
-Node* reverseLL()
+Node* reverseLL_iterative(Node* &head) {
+    // 3 Pointer Solution
+    Node* prev = nullptr;
+    Node* current = head;
+    Node* next = head->next; //
+
+    while(next != nullptr){
+        next = current->next;
+        current->next = prev; // Reverse the link
+        prev = current;
+        current = next;
+    }
+    head = prev; // Make the last node as the new head
+    return head; //
+}
+
+Node* reverseLL_recurrsive(Node* &head) {
+    if(head == nullptr || head->next == nullptr)
+    {
+        return head;
+    }
+
+    Node* newhead = reverseLL_recurrsive(head->next );
+    head->next->next = head; // Reverse the link
+    head->next = nullptr;
+
+    return newhead;  // Return the new head of the reversed list
+}
 
 int main() {
     int choice;
