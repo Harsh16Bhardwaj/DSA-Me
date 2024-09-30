@@ -112,6 +112,8 @@ Node* deletionLL(int position, Node* head) {
     }
 }
 
+Node* reverseLL()
+
 int main() {
     int choice;
     Node* head = new Node(10);  // Initialize the list with one node
