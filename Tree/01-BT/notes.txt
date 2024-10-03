@@ -1,0 +1,13 @@
+!--Tree--!
+A binary tree is a tree in which each node has at most two children, referred to as the left child and right child.
+
+Properties of Binary Trees:-
+    1. Max Nodes: A binary tree of height h has at most 2^h - 1 nodes.
+    2. Height: For n nodes, the minimum height is log₂(n) (perfect binary tree), and the maximum height is n-1 (degenerate or skewed binary tree).
+    
+    
+Types of Binary Trees:
+    Full Binary Tree: Each node has 0 or 2 children.
+    Perfect Binary Tree: All internal nodes have two children, and all leaf nodes are at the same level.
+    Complete Binary Tree: All levels are completely filled except possibly for the last level, which is filled from left to right.
+    Degenerate Tree (Skewed Tree): Each parent node has only one child (either left or right).
