@@ -1,3 +1,8 @@
+//Find the correct position of the element in the sorted array
+//Time Complexity: O(n^2)
+//Think about the insertion, after each insertion, the array is sorted up to that point
+//Then add the next element at the correct position
+
 #include<iostream>
 using namespace std;
 

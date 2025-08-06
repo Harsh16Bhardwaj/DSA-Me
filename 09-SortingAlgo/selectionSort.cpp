@@ -1,3 +1,8 @@
+// Selection Sort Algorithm
+// Time Complexity: O(n^2)
+// Think about the selection of minimums, after each selection, swap the min with i
+// The array is sorted up to that point
+
 class Solution {
 public:
     vector<int> sortArray(vector<int>& nums) {
