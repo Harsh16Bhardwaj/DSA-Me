@@ -2,6 +2,9 @@
 // Time Complexity: O(n^2)
 // Think about the selection of minimums, after each selection, swap the min with i
 // The array is sorted up to that point
+#include <iostream>
+#include <vector>
+using namespace std;
 
 class Solution {
 public:

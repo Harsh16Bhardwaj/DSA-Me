@@ -1,6 +1,9 @@
 //Adjacent Swaps and bubbling up the largest element to the end
 //Time Complexity: O(n^2)
 //Think about the passes, after each pass, the largest element is at the end of the array
+#include <iostream>
+#include <vector>
+using namespace std;
 
 class Solution {
 public:
